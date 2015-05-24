@@ -22,7 +22,7 @@ function start(eventObj) {
 	}
 
 	function render(eventObj) {
-		$list.innerHTML = '<ul><li>'+list.join('</li><li>')+'</li></ul>';
+		$list.innerHTML = '<ol><li>'+list.join('</li><li>')+'</li></ol>';
 		return $list.innerHTML;
 	}
 
