@@ -11,6 +11,7 @@ function start(eventObj) {
 	var list = [];
 
 	$todoForm.on('submit', addTodo);
+	$list.on("click", strikeThrough);
 	
 	function addTodo(eventObj) {
 		eventObj.preventDefault();
@@ -22,6 +23,12 @@ function start(eventObj) {
 
 	function render(todoList) {
 		return '<ul><li>'+todoList.join('</li><li>')+'</li></ul>';
+	}
+
+	function strikeThrough(todoList) {
+		for(var i = 0; i < $list.length; i++) {
+		$list[i].css("textDecoration", "line-through");
+		}
 	}
 
 	// $todoForm.css("backgroundColor", "green");
