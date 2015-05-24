@@ -6,7 +6,7 @@ function start(eventObj) {
 	var $todoButton = $('#add-to-do');
 	var $todoForm = $('#to-do-form');
 	var $list = $('#list');
-	// var $body = $("body");
+	var strike = true;
 
 	var list = [];
 
@@ -26,8 +26,17 @@ function start(eventObj) {
 	}
 
 	function strikeThrough(todoList) {
-		for(var i = 0; i < $list.length; i++) {
-		$list[i].css("textDecoration", "line-through");
+		if (strike === true) {
+			strike = false;
+		}
+		else if (strike === false) {
+			strike =true;
+		}
+		if(!strike) {
+			$('#list ul li').css("textDecoration", "line-through");
+		}
+		else {
+			$('#list ul li').css("textDecoration", "none");
 		}
 	}
 
