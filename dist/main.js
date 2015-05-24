@@ -6,6 +6,7 @@ function start(eventObj) {
 	var $todoButton = $('#add-to-do');
 	var $todoForm = $('#to-do-form');
 	var $list = $('#list');
+	// var $body = $("body");
 
 	var list = [];
 
@@ -23,7 +24,8 @@ function start(eventObj) {
 		return '<ul><li>'+todoList.join('</li><li>')+'</li></ul>';
 	}
 
-	$todoForm.style.backgroundColor = "blue";
+	// $todoForm.css("backgroundColor", "green");
+	$('body,html').css('backgroundColor','#5480cb');
 
 
 
