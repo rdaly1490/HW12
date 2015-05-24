@@ -21,11 +21,12 @@ function start(eventObj) {
 		$list.html(listHtml);
 	}
 
-	function render(todoList) {
-		return '<ul><li>'+todoList.join('</li><li>')+'</li></ul>';
+	function render(eventObj) {
+		$list.innerHTML = '<ul><li>'+list.join('</li><li>')+'</li></ul>';
+		return $list.innerHTML;
 	}
 
-	function strikeThrough(todoList) {
+	function strikeThrough(event) {
 		if (strike === true) {
 			strike = false;
 		}
@@ -33,10 +34,10 @@ function start(eventObj) {
 			strike =true;
 		}
 		if(!strike) {
-			$('#list ul li').css("textDecoration", "line-through");
+			event.target.style.textDecoration = "line-through";
 		}
 		else {
-			$('#list ul li').css("textDecoration", "none");
+			event.target.style.textDecoration = "none";
 		}
 	}
 
