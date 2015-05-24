@@ -26,6 +26,25 @@ function start(eventObj) {
 
 	// $todoForm.css("backgroundColor", "green");
 	$('body,html').css('backgroundColor','#5480cb');
+	$todoButton.css("display", "block");
+	$todoButton.css("marginLeft", "auto");
+	$todoButton.css("marginRight", "auto");
+	$todoButton.css("marginTop", "10px");
+	$todoButton.css("height", "50px");
+	$todoButton.css("color", "#fff");
+	$todoButton.css("backgroundColor", "gray");
+	$todoButton.css("borderRadius", "5px");
+	$todoButton.css("fontWeight", "bold");
+	$toDoInput.css("display", "block");
+	$toDoInput.css("marginLeft", "auto");
+	$toDoInput.css("marginRight", "auto");
+	$toDoInput.css("height", "40px");
+	$toDoInput.css("width", "50%");
+	$toDoInput.css("fontSize", "16px");
+	$toDoInput.css("backgroundColor", "#d9d5d7");
+	$list.css("color", "white");
+	$list.css("fontSize", "32px");
+
 
 
 
